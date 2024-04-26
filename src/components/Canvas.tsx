@@ -1,9 +1,12 @@
 import React from 'react'
+import '../styles/canvas.scss'
 
-const canvas = () => {
+const Canvas = () => {
   return (
-    <div>canvas</div>
+    <div className='canvas'>
+        <canvas />
+    </div>
   )
 }
 
-export default canvas
+export default Canvas
