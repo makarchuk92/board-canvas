@@ -3,7 +3,7 @@ import '../styles/canvas.scss'
 import { observer } from 'mobx-react-lite'
 import toolState from '../store/toolState'
 import Brush from '../tools/Brush'
-import canavasState from '../store/canavasState'
+import canavasState from '../store/canvasState'
 
 const Canvas = observer ( () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null) 
