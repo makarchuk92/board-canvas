@@ -5,6 +5,7 @@ import Brush from '../tools/Brush'
 import canvasState from '../store/canvasState'
 import Rectangle from '../tools/Rectangle'
 import Circle from '../tools/Circle'
+import Line from '../tools/Line'
 
 
 const Toolbar = () => {
@@ -17,7 +18,7 @@ const Toolbar = () => {
         <button className='toolbar__btn rectangle' onClick={() => canvasState.setToolIfCanvasExists(new Rectangle(canvasState.canvas!))} ></button>
         <button className='toolbar__btn circle' onClick={() => canvasState.setToolIfCanvasExists(new Circle(canvasState.canvas!))} ></button>
         <button className='toolbar__btn eraser'></button>
-        <button className='toolbar__btn line'></button>
+        <button className='toolbar__btn line' onClick={() => canvasState.setToolIfCanvasExists(new Line(canvasState.canvas!))} ></button>
         <input type="color" className='toolbar__btn' />
       </div>
       <div className='toolbar__editor'>
