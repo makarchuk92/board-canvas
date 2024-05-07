@@ -12,7 +12,7 @@ const Canvas = observer ( () => {
       if(canvasRef.current) {
         canavasState.setCanvas(canvasRef.current)
         const brush = new Brush(canvasRef.current)
-        toolState.setTool(null)
+        toolState.setTool(null!)
       }
   
     }, [])
