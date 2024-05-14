@@ -27,8 +27,8 @@ const Toolbar = () => {
         <input onChange={e => changeColor(e)} type="color" className='toolbar__btn' />
       </div>
       <div className='toolbar__editor'>
-        <button className='toolbar__btn undo'></button>
-        <button className='toolbar__btn redo'></button>
+        <button className='toolbar__btn undo' onClick={() => canvasState.undo()} ></button>
+        <button className='toolbar__btn redo' onClick={() => canvasState.redo()} ></button>
         <button className='toolbar__btn save'></button>
       </div>
     </div>
