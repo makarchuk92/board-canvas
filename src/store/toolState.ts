@@ -1,7 +1,8 @@
 import { makeAutoObservable } from "mobx";
 interface Tool {
     fillColor: string | null;
-    strokeColor: string | null
+    strokeColor: string | null;
+    lineWidth: string | null;
 }
 class ToolState {
     tool: Tool |null = null;
@@ -19,6 +20,11 @@ class ToolState {
     setStrokeColor(color: string) {
         if (this.tool) {
             this.tool.strokeColor = color
+        }
+    }
+    setLineWidth(width: string) {
+        if (this.tool) {
+            this.tool.lineWidth = width
         }
     }
 }
